@@ -1,0 +1,2 @@
+include ':app', ':newapp', ':lslib', ':myunittest', ':myunittestpractice', ':myuitest2', ':testexit'
+project(':lslib').projectDir = new File('lslibrary')

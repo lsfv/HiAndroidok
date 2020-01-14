@@ -1,0 +1,21 @@
+todo 整体布局。
+DrawerLayout
+    LinearLayout
+        AppBarLayout
+            Toolbar
+        CoordinatorLayout
+            FrameLayout
+            FloatingActionButton
+    NavigationView
+
+
+
+
+抽屉布局(DrawerLayout)
+导航视图(NavigationView)这2个常用来实现侧滑导航
+
+CoordinatorLayout，协调子控件
+AppBarLayout 滚动 隐藏和现实 功能,常和CoordinatorLayout配合
+https://www.jianshu.com/p/ba431ccca188
+
+Toolbar：导航控件用于取代之前的ActionBar

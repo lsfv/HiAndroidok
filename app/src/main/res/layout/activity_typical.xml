@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.NewCustomView.MyTouch.typical">
+
+    <com.linson.android.hiandroid2.UI.NewCustomView.MyTouch.cv.MyOuterLayout
+        android:id="@+id/outer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.linson.android.hiandroid2.UI.NewCustomView.MyTouch.cv.MyInnerLayout
+            android:id="@+id/inner"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="100dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <com.linson.android.hiandroid2.UI.NewCustomView.MyTouch.cv.MyButtonOk
+                android:id="@+id/button19"
+                android:layout_width="147dp"
+                android:layout_height="95dp"
+                android:layout_marginStart="108dp"
+                android:layout_marginTop="76dp"
+                android:text="Button"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="49dp"
+                tools:layout_editor_absoluteY="29dp" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="290dp"
+                android:layout_height="59dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="当在蓝色区块滑动时候，红色截取左右滑动，也就是左右归红色，上下归蓝色。按钮要保持有效"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="284dp" />
+        </com.linson.android.hiandroid2.UI.NewCustomView.MyTouch.cv.MyInnerLayout>
+    </com.linson.android.hiandroid2.UI.NewCustomView.MyTouch.cv.MyOuterLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.linson.android.hiandroid2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Index">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".JavaPractice.Index" />
+        <activity android:name=".Intent.Index" />
+        <activity android:name=".Intent.StaticIntent" />
+        <activity android:name=".Intent.dynamic1">
+            <intent-filter>
+                <action android:name="TESTDynamic" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="CUSTOM_DY1" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Intent.dynamic2">
+            <intent-filter>
+                <action android:name="TESTDynamic" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="CUSTOM_DY1" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".UI.Index" />
+        <activity android:name=".UI.TextViewButtom" />
+        <activity android:name=".UI.ImageViewUI" />
+        <activity android:name=".UI.alertdialog" />
+        <activity android:name=".UI.layout" />
+        <activity android:name=".UI.listView" />
+        <activity android:name=".UI.customView" />
+        <activity android:name=".BroadcastStudy.Index" />
+        <activity android:name=".Selialzation.Index" />
+        <activity android:name=".MultiMedia.Index" />
+        <activity android:name=".MultiMedia.cutBitmap" />
+        <activity android:name=".NetworkStudy.Index" />
+        <activity android:name=".Fragment.Index" />
+        <activity android:name=".Fragment.StaticFragment" />
+        <activity android:name=".Fragment.DynamicFragment" />
+        <activity android:name=".Fragment.complexfragment" />
+        <activity android:name=".Services.Index" />
+        <activity android:name=".Services.HandlerPractice" />
+        <activity android:name=".Services.AsyncTaskPractice" />
+        <activity android:name=".Services.DownloadService" />
+
+        <service
+            android:name=".BackServices.DownloadServices"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".BackServices.CaculateServices"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".BackServices.SocketManager"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":socket" />
+        <service
+            android:name=".BackServices.SaleManager"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":saleManager" />
+
+        <activity android:name=".UI.myCustomView.index" />
+        <activity android:name=".UI.myCustomView.ScrollerPractice1" />
+        <activity android:name=".UI.myCustomView.motionEventPractice" />
+        <activity android:name=".UI.myCustomView.ScrollPage" />
+        <activity android:name=".Services.SocketPracice" />
+        <activity android:name=".Weather.Control.Index" />
+        <activity android:name=".Weather.Control.Main" />
+        <activity android:name=".OPAIWeather.Control.Index" />
+        <activity android:name=".OPAIWeather.Control.Main" />
+        <activity android:name=".DesignPattern.Index" />
+        <activity android:name=".UI.myCustomView.MyCircleImage" />
+        <activity android:name=".UI.myCustomView.MyFlowLayout" />
+        <activity android:name=".UI.myCustomView.MySignalRV" />
+        <activity android:name=".UI.myCustomView.DrawIt.Index" />
+        <activity android:name=".UI.myCustomView.DrawIt.BasePaint" />
+        <activity android:name=".UI.myCustomView.DrawIt.AdvancePraice" />
+        <activity android:name=".UI.myCustomView.Animotion.Index" />
+        <activity android:name=".UI.myCustomView.Animotion.ValueAnimation.VAIndex" />
+        <activity android:name=".UI.myCustomView.Animotion.Main" />
+        <activity android:name=".UI.NewCustomView.MyPaint.PaintIndex" />
+        <activity android:name=".UI.NewCustomView.MyPaint.BasePaint" />
+        <activity android:name=".UI.NewCustomView.MyPaint.ComplexPaint" />
+        <activity android:name=".UI.NewCustomView.MyView.ViewIndex" />
+        <activity android:name=".UI.NewCustomView.MyAnimation.AnimationIndex" />
+        <activity android:name=".Resite.ResiteIndex" />
+        <activity android:name=".Fragment.InterAction_index" />
+        <activity android:name=".MyContent.ContentIndex" />
+        <activity android:name=".Services.SocketPractice" />
+        <activity android:name=".Services.AIDLSys.SysAidl" />
+        <activity android:name=".UI.NewCustomView.MyTouch.TouchIndex" />
+        <activity android:name=".UI.NewCustomView.MyTouch.typical" />
+        <activity android:name=".UI.advanceControls.coordination" />
+        <activity android:name=".UI.advanceControls.Drawer" />
+        <activity android:name=".UI.advanceControls.Navegation" />
+        <activity android:name=".UI.advanceControls.MyToolbar" />
+        <activity android:name=".Pattern.PatternIndex" />
+        <activity android:name=".Pattern.Normal" />
+        <activity android:name=".Pattern.layer" />
+        <activity android:name=".Pattern.MyMVP" />
+        <activity android:name=".Pattern.MyMVP2" />
+        <activity android:name=".Pattern.GoogleMvp" />
+        <activity android:name=".UI.OtherControls" />
+        <activity android:name=".UI.InflateTest" />
+        <activity android:name=".UI.NewCustomView.MyTouch.SameDirection" />
+        <activity android:name=".UI.NewCustomView.MyTouch.DiffDirection" />
+        <activity android:name=".UI.NewCustomView.MyTouch.TypicalEX" />
+        <activity android:name=".UI.NewCustomView.MyTouch.same2" />
+        <activity android:name=".UI.MyViewPager" />
+        <activity android:name=".Pattern.Databind" />
+        <activity android:name=".UI.NewCustomView.MyPaint.NewPaint1" />
+        <activity android:name=".NetworkStudy.MyUpload"></activity>
+    </application>
+
+</manifest>
